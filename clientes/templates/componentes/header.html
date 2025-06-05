@@ -1,0 +1,14 @@
+{% load static %}
+<div class="topo">
+    <img src="{% static 'img/logo.png'%}" alt="Logo Balanço Senac RJ" class="logo">
+    <input type="text" placeholder="Search..." class="search-bar">
+    <nav class="menu">
+        <a href="{% url 'inicio'%}">Início</a>
+        <a href="{% url 'esporte' %}">Esporte</a>
+        <a href="{% url 'cultura'%}">Cultura</a>
+        <a href="{% url 'economia'%}">Economia</a> 
+    </nav>
+    <form action="{% url 'login' %}" method="get">
+        <button class="login-btn">Login</button>
+    </form>
+</div>           

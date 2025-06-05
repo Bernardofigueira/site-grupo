@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<section class="contato">
+            <div class="area-formulario">
+                <h2>Login</h2>
+                <form class="formulario">
+                    <div class="campos">
+                        <label for="nome">Email</label>
+                        <input type="text" name="nome" class="input" id="nome" placeholder="Digite o seu e-mail">
+                    </div>
+                    <div class="campos">
+                        <label for="email">Senha</label>
+                        <input type="text" class="input"  placeholder="Digite a sua senha">
+                    </div>
+                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+                    <a href="{% url 'cadastro' %}"><h3>Não tem login?Cadastre-se</h3></a>
+                </form>
+            </div>
+</section>
+
+
+
+
+{% endblock %}

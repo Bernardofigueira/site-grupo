@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Esporte {% endblock %}
+{% block content %}
+<body>
+    <main>
+        <h1 class="titulo">Esporte</h1>
+        <section class="noticias">
+            <div class="carousel">
+                <div class="noticia">
+                <a href="https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/01-06-2025/flamengo-fortaleza.ghtml" target="_blank"><img src="{% static 'img/flamengo.jpg' %}" alt="Jogo do Flamengo"></a>
+                <p><strong>Flamengo goleia o Fortaleza e vira líder antes da Copa do Mundo de Clubes</strong></p>
+                </div>
+
+                <div class="noticia">
+                <a href="https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2025/06/01/neymar-e-expulso-apos-fazer-gol-de-mao-e-so-volta-a-jogar-pelo-santos-se-renovar-contrato.ghtml" target="_blank"><img src="{% static 'img/ney.jpg' %}" alt="Neymar jogando bola"></a>
+                <p><strong>Neymar é expulso após fazer gol de mão contra o Botafogo; confira</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/futebol/selecao-brasileira/ancelotti-elogia-medalhoes-e-planeja-futuro-de-estevao-na-selecao/"  target="_blank"><img src="{% static 'img/anceloti.jpg' %}" alt="Ancelotti"></a>
+                <p><strong>Ancelotti elogia medalhões, diz que Vini Jr. é "fundamental" e planeja futuro de Estêvão</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/cristiano-ronaldo-decide-portugal-vence-e-vai-a-final-da-nations-league/"  target="_blank"><img src="{% static 'img/cr7.jpeg' %}" alt="Cristiano Ronaldo"></a>
+                <p><strong>Cristiano Ronaldo decide, Portugal vence e vai à final da Nations League</strong></p>
+                </div>
+            </div>
+        </section>
+        <section class="noticias">
+            <div class="carousel">
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/ranking-elege-os-melhores-times-do-mundial-de-clubes-saiba-quem-sao/" target="_blank"><img src="{% static 'img/mundial.png' %}" alt="Mundial"></a>
+                <p><strong>Ranking elege os melhores times do Mundial de Clubes; saiba quem são</strong></p>
+                </div>
+
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/tenis/djokovic-vence-zverev-e-enfrentara-numero-1-do-mundo-na-semifinal-de-roland-garros/" target="_blank"><img src="{% static 'img/djokovic.jpg' %}" alt="Djokovic"></a>
+                <p><strong>Djokovic vence Zverev e enfrentará número 1 do mundo na semifinal de Roland Garros</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/donnarumma-diz-que-mal-conseguiu-comemorar-titulo-da-champions-com-o-psg/"  target="_blank"><img src="{% static 'img/psg.png' %}" alt="Psg"></a>
+                <p><strong>Donnarumma diz que mal conseguiu comemorar título da Champions com o PSG</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/esportes/futebol/flamengo/saiba-onde-sera-a-base-do-flamengo-no-mundial-de-clubes/"  target="_blank"><img src="{% static 'img/base_mundial.jpg' %}" alt="Base do Flamengo Mundial"></a>
+                <p><strong>Saiba onde será a base do Flamengo no Mundial de Clubes</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock%}

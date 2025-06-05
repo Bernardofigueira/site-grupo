@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cultura {% endblock %}
+{% block content %}
+
+<body>
+    <main>
+        <h1 class="titulo">Cultura</h1>
+        <section class="noticias">
+            <div class="carousel">
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/prato-tipico-de-curitiba-ganha-reconhecimento-nacional-saiba-qual-e/" target="_blank"><img src="{% static 'img/prato.bmp' %}" alt="Jogo do Flamengo"></a>
+                <p><strong>Prato típico de Curitiba ganha reconhecimento nacional: saiba qual é</strong></p>
+                </div>
+
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/entretenimento/professora-explica-sucesso-de-ainda-estou-aqui-e-o-caminho-para-o-oscar/" target="_blank"><img src="{% static 'img/cristais.bmp' %}" alt="Neymar jogando bola"></a>
+                <p><strong>Professora explica sucesso de "Ainda Estou Aqui" e o caminho para o Oscar</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/entretenimento/avenida-paulista-completa-133-anos-e-recebe-agenda-cultural-saiba-mais/"  target="_blank"><img src="{% static 'img/avenida.bmp' %}" alt="Ancelotti"></a>
+                <p><strong>Avenida Paulista completa 133 anos e recebe agenda cultural; saiba mais</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/nacional/sul/pr/parana-tera-primeiro-museu-pompidou-do-hemisferio-sul-veja-imagens/"  target="_blank"><img src="{% static 'img/museu.bmp' %}" alt="Cristiano Ronaldo"></a>
+                <p><strong>Paraná terá primeiro Museu Pompidou do hemisfério sul; veja imagens</strong></p>
+                </div>
+            </div>
+        </section>
+        <section class="noticias">
+            <div class="carousel">
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/internacional/festival-com-guerra-de-tomate-volta-a-ser-realizado-na-colombia/" target="_blank"><img src="{% static 'img/festa.bmp' %}" alt="Mundial"></a>
+                <p><strong>Festival com "guerra de tomate" volta a ser realizado na Colômbia</strong></p>
+                </div>
+
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/nacional/brasil/colecao-nostalgia-e-luto-busca-por-bebes-reborn-vai-de-criancas-a-idosos/" target="_blank"><img src="{% static 'img/bebe.bmp' %}" alt="Djokovic"></a>
+                <p><strong>Coleção, nostalgia e luto: Busca por bebês reborn vai de crianças a idosos</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/entretenimento/mostra-fullgas-explora-universo-da-cultura-pop-dos-anos-1980/"  target="_blank"><img src="{% static 'img/pop.bmp' %}" alt="Psg"></a>
+                <p><strong>Mostra Fullgás explora universo da cultura pop dos anos 1980</strong></p>
+                </div>
+                <div class="noticia">
+                <a href="https://www.cnnbrasil.com.br/entretenimento/wicked-musical-da-broadway-estreia-no-brasil-com-sucesso-de-bilheteria/"  target="_blank"><img src="{% static 'img/musical.bmp' %}" alt="Base do Flamengo Mundial"></a>
+                <p><strong>Wicked: Musical da Broadway estreia no Brasil com sucesso de bilheteria</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Inicio {% endblock %}
+{% block content %}
+<body>
+  <main>
+    <section class="destaque">
+      <img src="{% static 'img/rio.jpg'%}" alt="Vista do Cristo Redentor e Pão de Açúcar">
+      <div class="texto-destaque">
+        <h2>Últimas Notícias</h2>
+        <button class="botao-ir">Ir</button>
+      </div>
+    </section>
+
+    <section class="noticias">
+      <h2>Notícias</h2>
+      <div class="carousel">
+        <button class="arrow left">&#8249;</button>
+        <div class="noticia">
+          <a href="https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/01-06-2025/flamengo-fortaleza.ghtml" target="_blank"><img src="{% static 'img/flamengo.jpg' %}" alt="Jogo do Flamengo"></a>
+          <p><strong>Flamengo goleia o Fortaleza e vira líder antes da Copa do Mundo de Clubes</strong></p>
+        </div>
+        <div class="noticia">
+          <a href="https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2025/06/01/neymar-e-expulso-apos-fazer-gol-de-mao-e-so-volta-a-jogar-pelo-santos-se-renovar-contrato.ghtml" target="_blank"><img src="{% static 'img/ney.jpg' %}" alt="Neymar jogando bola"></a>
+          <p><strong>Neymar é expulso após fazer gol de mão contra o Botafogo; confira</strong></p>
+        </div>
+        <div class="noticia">
+          <a href="https://www.cnnbrasil.com.br/internacional/por-que-russia-colocou-pneus-em-avioes-que-foram-alvo-de-drones-da-ucrania/" target="_blank"><img src="{% static 'img/russia.png' %}" alt="Neymar jogando bola"></a>
+          <p><strong>Por que a Rússia colocou pneus em aviões que foram alvo de drones da Ucrânia?</strong></p>
+        </div>
+        <div class="noticia">
+          <a href="https://www.cnnbrasil.com.br/esportes/futebol/selecao-brasileira/ancelotti-elogia-medalhoes-e-planeja-futuro-de-estevao-na-selecao/"  target="_blank"><img src="{% static 'img/anceloti.jpg' %}" alt="Neymar jogando bola"></a>
+          <p><strong>Ancelotti elogia medalhões, diz que Vini Jr. é "fundamental" e planeja futuro de Estêvão</strong></p>
+        </div>
+        <button class="arrow right">&#8250;</button>
+      </div>
+    </section>
+  </main>
+  {% block footer %}
+  {% endblock %}
+</body>
+</html>
+{% endblock %}
