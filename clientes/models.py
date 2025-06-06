@@ -12,6 +12,7 @@ class Cliente(models.Model):
     data_nascimento = models.DateField() # Data de nascimento do cliente
     telefone = models.CharField(max_length=20, blank=True, null=True) # Telefone do cliente, opcional (blank=True, null=True)
     email = models.EmailField(unique=True) # Email do cliente, deve ser único e formatado como email
+    senha = models.CharField(max_length=100)
     data_cadastro = models.DateTimeField(auto_now_add=True) # Data e hora do cadastro, preenchido automaticamente na criação
 
     def __str__(self):
